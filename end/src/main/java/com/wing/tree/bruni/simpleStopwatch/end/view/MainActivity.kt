@@ -10,7 +10,6 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.wing.tree.bruni.simpleStopwatch.end.databinding.ActivityMainBinding
 import com.wing.tree.bruni.simpleStopwatch.end.viewModel.MainViewModel
 import kotlinx.coroutines.FlowPreview
-import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.sample
 import kotlinx.coroutines.launch
 import java.util.*
