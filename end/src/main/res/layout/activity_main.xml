@@ -13,47 +13,57 @@
         android:layout_height="76dp"
         android:layout_marginTop="56dp"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/pause"
+        app:layout_constraintBottom_toTopOf="@+id/control"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="00:00.00" />
 
-    <Button
-        android:id="@+id/play"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:background="@drawable/oval"
-        app:icon="@drawable/ic_round_play_arrow_24"
-        app:layout_constraintBottom_toBottomOf="@+id/pause"
-        app:layout_constraintEnd_toStartOf="@+id/pause"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="ContentDescription" />
-
-    <Button
-        android:id="@+id/pause"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="56dp"
-        android:background="@drawable/oval"
-        app:icon="@drawable/ic_round_pause_24"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/stop"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/play"
-        tools:ignore="ContentDescription" />
-
-    <Button
-        android:id="@+id/stop"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:background="@drawable/oval"
-        app:icon="@drawable/ic_round_stop_24"
-        app:layout_constraintBottom_toBottomOf="@+id/pause"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/pause"
-        tools:ignore="ContentDescription" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/oval"
+            app:icon="@drawable/ic_round_play_arrow_24"
+            app:layout_constraintBottom_toBottomOf="@+id/pause"
+            app:layout_constraintEnd_toStartOf="@+id/pause"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/oval"
+            app:icon="@drawable/ic_round_pause_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stop"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/play"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/oval"
+            app:icon="@drawable/ic_round_stop_24"
+            app:layout_constraintBottom_toBottomOf="@+id/pause"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/pause"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
